@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>PropertyFieldTermPicker - SharePoint Framework React Controls</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "PropertyFieldTermPicker";
+    var mkdocs_page_input_path = "controls/PropertyFieldTermPicker.md";
+    var mkdocs_page_url = "/controls/PropertyFieldTermPicker/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> SharePoint Framework React Controls</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../getting-started/">Getting started</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Controls</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../PropertyFieldColorPicker/">PropertyFieldColorPicker</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../PropertyFieldDateTimePicker/">PropertyFieldDateTimePicker</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../PropertyFieldListPicker/">PropertyFieldListPicker</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../PropertyFieldPeoplePicker/">PropertyFieldPeoplePicker</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../PropertyFieldSpinButton/">PropertyFieldSpinButton</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">PropertyFieldTermPicker</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#propertyfieldtermpicker-control">PropertyFieldTermPicker control</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#how-to-use-this-control-in-your-solutions">How to use this control in your solutions</a></li>
+        
+            <li><a class="toctree-l4" href="#implementation">Implementation</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Controls with callout</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../PropertyFieldDropdownWithCallout/">PropertyFieldDropdownWithCallout</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../PropertyFieldTextWithCallout/">PropertyFieldTextWithCallout</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../PropertyFieldToggleWithCallout/">PropertyFieldToggleWithCallout</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">About</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../about/release-notes/">Release notes</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../about/license/">License</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">SharePoint Framework React Controls</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Controls &raquo;</li>
+        
+      
+    
+    <li>PropertyFieldTermPicker</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/SharePoint/sp-dev-fx-property-controls/blob/master/docs/documentation/docs/controls/PropertyFieldTermPicker.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="propertyfieldtermpicker-control">PropertyFieldTermPicker control</h1>
+<p>This control generates a term picker that can be used in the property pane of your SharePoint Framework web parts.</p>
+<blockquote>
+<p><strong>Disclaimer</strong>: This control makes use of the <code>ProcessQuery</code> API end-points to retrieve the managed metadata information. This will get changed once the APIs for managing managed metadata will become available.</p>
+</blockquote>
+<p><strong>Empty term picker</strong></p>
+<p><img alt="Empty term picker" src="../../assets/termpicker-empty.png" /></p>
+<p><strong>Selecting terms</strong></p>
+<p><img alt="Selecting terms" src="../../assets/termpicker-group.png" /></p>
+<p><strong>Selected terms in the panel</strong></p>
+<p><img alt="Selected terms in the panel" src="../../assets/termpicker-selected.png" /></p>
+<p><strong>Empty term picker</strong></p>
+<p><img alt="Selected terms in the input" src="../../assets/termpicker-selected-terms.png" /></p>
+<h2 id="how-to-use-this-control-in-your-solutions">How to use this control in your solutions</h2>
+<ol>
+<li>Check that you installed the <code>@pnp/spfx-property-controls</code> dependency. Check out The <a href="../Getting-started">getting started</a> page for more information about installing the dependency.</li>
+<li>Import the following modules to your component:</li>
+</ol>
+<pre><code class="TypeScript">import { PropertyFieldTermPicker } from '@pnp/spfx-property-controls/lib/PropertyFieldTermPicker';
+</code></pre>
+
+<ol>
+<li>Create a new property for your web part, for example:</li>
+</ol>
+<pre><code class="TypeScript">import { ICheckedTerms } from &quot;@pnp/spfx-property-controls/lib/PropertyFieldTermPicker&quot;;
+
+export interface IPropertyControlsTestWebPartProps {
+  terms: ICheckedTerms;
+}
+</code></pre>
+
+<ol>
+<li>Add the custom property control to the <code>groupFields</code> of the web part property pane configuration:</li>
+</ol>
+<pre><code class="TypeScript">PropertyFieldTermPicker('terms', {
+  label: 'Select terms',
+  panelTitle: 'Select terms',
+  initialValues: this.properties.terms,
+  allowMultipleSelections: true,
+  excludeSystemGroup: false,
+  onPropertyChange: this.onPropertyPaneFieldChanged,
+  properties: this.properties,
+  context: this.context,
+  onGetErrorMessage: null,
+  deferredValidationTime: 0,
+  key: 'termSetsPickerFieldId'
+})
+</code></pre>
+
+<h2 id="implementation">Implementation</h2>
+<p>The <code>PropertyFieldTermPicker</code> control can be configured with the following properties:</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>label</td>
+<td>string</td>
+<td>yes</td>
+<td>Property field label displayed on top.</td>
+</tr>
+<tr>
+<td>panelTitle</td>
+<td>string</td>
+<td>yes</td>
+<td>TermSet Picker Panel title.</td>
+</tr>
+<tr>
+<td>disabled</td>
+<td>boolean</td>
+<td>no</td>
+<td>Specify if the control needs to be disabled.</td>
+</tr>
+<tr>
+<td>context</td>
+<td>WebPartContext</td>
+<td>yes</td>
+<td>Context of the current web part.</td>
+</tr>
+<tr>
+<td>initialValues</td>
+<td>ICheckedTerms</td>
+<td>no</td>
+<td>Defines the selected by default term sets.</td>
+</tr>
+<tr>
+<td>allowMultipleSelections</td>
+<td>boolean</td>
+<td>no</td>
+<td>Defines if the user can select only one or many term sets. Default value is false.</td>
+</tr>
+<tr>
+<td>excludeSystemGroup</td>
+<td>boolean</td>
+<td>no</td>
+<td>Indicator to define if the system Groups are exclude. Default is false.</td>
+</tr>
+<tr>
+<td>onPropertyChange</td>
+<td>function</td>
+<td>yes</td>
+<td>Defines a onPropertyChange function to raise when the date gets changed.</td>
+</tr>
+<tr>
+<td>properties</td>
+<td>any</td>
+<td>yes</td>
+<td>Parent web part properties, this object is use to update the property value.</td>
+</tr>
+<tr>
+<td>key</td>
+<td>string</td>
+<td>yes</td>
+<td>An unique key that indicates the identity of this control.</td>
+</tr>
+<tr>
+<td>onGetErrorMessage</td>
+<td>function</td>
+<td>no</td>
+<td>The method is used to get the validation error message and determine whether the input value is valid or not. See <a href="https://dev.office.com/sharepoint/docs/spfx/web-parts/guidance/validate-web-part-property-values">this documentation</a> to learn how to use it.</td>
+</tr>
+<tr>
+<td>deferredValidationTime</td>
+<td>number</td>
+<td>no</td>
+<td>Control will start to validate after users stop typing for <code>deferredValidationTime</code> milliseconds. Default value is 200.</td>
+</tr>
+</tbody>
+</table>
+<p>Interface <code>ICheckedTerms</code></p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>string</td>
+<td>yes</td>
+<td>The ID of the term</td>
+</tr>
+<tr>
+<td>name</td>
+<td>string</td>
+<td>yes</td>
+<td>The name of the term</td>
+</tr>
+<tr>
+<td>path</td>
+<td>string</td>
+<td>yes</td>
+<td>The path of the term</td>
+</tr>
+<tr>
+<td>termSet</td>
+<td>string</td>
+<td>yes</td>
+<td>The parent term set of the term</td>
+</tr>
+</tbody>
+</table>
+<p><img alt="" src="https://telemetry.sharepointpnp.com/sp-dev-fx-property-controls/wiki/PropertyFieldTermPicker" /></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../PropertyFieldDropdownWithCallout/" class="btn btn-neutral float-right" title="PropertyFieldDropdownWithCallout">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../PropertyFieldSpinButton/" class="btn btn-neutral" title="PropertyFieldSpinButton"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/SharePoint/sp-dev-fx-property-controls/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../PropertyFieldSpinButton/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../PropertyFieldDropdownWithCallout/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/require.js"></script>
+      <script src="../../search/search.js"></script>
+
+</body>
+</html>

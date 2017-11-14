@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>PropertyFieldPeoplePicker - SharePoint Framework React Controls</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "PropertyFieldPeoplePicker";
+    var mkdocs_page_input_path = "controls/PropertyFieldPeoplePicker.md";
+    var mkdocs_page_url = "/controls/PropertyFieldPeoplePicker/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> SharePoint Framework React Controls</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../../getting-started/">Getting started</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Controls</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../PropertyFieldColorPicker/">PropertyFieldColorPicker</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../PropertyFieldDateTimePicker/">PropertyFieldDateTimePicker</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../PropertyFieldListPicker/">PropertyFieldListPicker</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">PropertyFieldPeoplePicker</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#propertyfieldpeoplepicker-control">PropertyFieldPeoplePicker control</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#how-to-use-this-control-in-your-solutions">How to use this control in your solutions</a></li>
+        
+            <li><a class="toctree-l4" href="#implementation">Implementation</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../PropertyFieldSpinButton/">PropertyFieldSpinButton</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../PropertyFieldTermPicker/">PropertyFieldTermPicker</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Controls with callout</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../PropertyFieldDropdownWithCallout/">PropertyFieldDropdownWithCallout</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../PropertyFieldTextWithCallout/">PropertyFieldTextWithCallout</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../PropertyFieldToggleWithCallout/">PropertyFieldToggleWithCallout</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">About</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../about/release-notes/">Release notes</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../about/license/">License</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">SharePoint Framework React Controls</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Controls &raquo;</li>
+        
+      
+    
+    <li>PropertyFieldPeoplePicker</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/SharePoint/sp-dev-fx-property-controls/blob/master/docs/documentation/docs/controls/PropertyFieldPeoplePicker.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="propertyfieldpeoplepicker-control">PropertyFieldPeoplePicker control</h1>
+<p>This control generates a people / group picker that can be used in the property pane of your SharePoint Framework web parts.</p>
+<p><strong>Searching for persons</strong></p>
+<p><img alt="Person picker" src="../../assets/peoplepicker-person.png" /></p>
+<p><strong>Searching for groups</strong></p>
+<p><img alt="Group picker" src="../../assets/peoplepicker-group.png" /></p>
+<p><strong>Selected people / groups</strong></p>
+<p><img alt="Group picker" src="../../assets/peoplepicker-selected.png" /></p>
+<h2 id="how-to-use-this-control-in-your-solutions">How to use this control in your solutions</h2>
+<ol>
+<li>Check that you installed the <code>@pnp/spfx-property-controls</code> dependency. Check out The <a href="../Getting-started">getting started</a> page for more information about installing the dependency.</li>
+<li>Import the following modules to your component:</li>
+</ol>
+<pre><code class="TypeScript">import { PropertyFieldPeoplePicker, PrincipalType } from '@pnp/spfx-property-controls/lib/PropertyFieldPeoplePicker';
+</code></pre>
+
+<ol>
+<li>Create a new property for your web part, for example:</li>
+</ol>
+<pre><code class="TypeScript">import { IPropertyFieldGroupOrPerson } from &quot;@pnp/spfx-property-controls/lib/PropertyFieldPeoplePicker&quot;;
+
+export interface IPropertyControlsTestWebPartProps {
+  people: IPropertyFieldGroupOrPerson[];
+}
+</code></pre>
+
+<ol>
+<li>Add the custom property control to the <code>groupFields</code> of the web part property pane configuration:</li>
+</ol>
+<pre><code class="TypeScript">PropertyFieldPeoplePicker('people', {
+  label: 'PropertyFieldPeoplePicker',
+  initialData: this.properties.people,
+  allowDuplicate: false,
+  principalType: [PrincipalType.Users, PrincipalType.SharePoint, PrincipalType.Security],
+  onPropertyChange: this.onPropertyPaneFieldChanged,
+  context: this.context,
+  properties: this.properties,
+  onGetErrorMessage: null,
+  deferredValidationTime: 0,
+  key: 'peopleFieldId'
+})
+</code></pre>
+
+<h2 id="implementation">Implementation</h2>
+<p>The <code>PropertyFieldPeoplePicker</code> control can be configured with the following properties:</p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>label</td>
+<td>string</td>
+<td>yes</td>
+<td>Property field label displayed on top.</td>
+</tr>
+<tr>
+<td>disabled</td>
+<td>boolean</td>
+<td>no</td>
+<td>Specify if the control needs to be disabled.</td>
+</tr>
+<tr>
+<td>context</td>
+<td>WebPartContext</td>
+<td>yes</td>
+<td>Context of the current web part.</td>
+</tr>
+<tr>
+<td>initialData</td>
+<td>IPropertyFieldGroupOrPerson[]</td>
+<td>no</td>
+<td>Intial data to load in the people picker (optional).</td>
+</tr>
+<tr>
+<td>allowDuplicate</td>
+<td>boolean</td>
+<td>no</td>
+<td>Defines if the People Picker allows to select duplicated users (optional).</td>
+</tr>
+<tr>
+<td>principalType</td>
+<td>PrincipalType[]</td>
+<td>no</td>
+<td>Define which type of data you want to retrieve: User, SharePoint groups, Security groups. Multiple are possible.</td>
+</tr>
+<tr>
+<td>onPropertyChange</td>
+<td>function</td>
+<td>yes</td>
+<td>Defines a onPropertyChange function to raise when the date gets changed.</td>
+</tr>
+<tr>
+<td>properties</td>
+<td>any</td>
+<td>yes</td>
+<td>Parent web part properties, this object is use to update the property value.</td>
+</tr>
+<tr>
+<td>key</td>
+<td>string</td>
+<td>yes</td>
+<td>An unique key that indicates the identity of this control.</td>
+</tr>
+<tr>
+<td>onGetErrorMessage</td>
+<td>function</td>
+<td>no</td>
+<td>The method is used to get the validation error message and determine whether the input value is valid or not. See <a href="https://dev.office.com/sharepoint/docs/spfx/web-parts/guidance/validate-web-part-property-values">this documentation</a> to learn how to use it.</td>
+</tr>
+<tr>
+<td>deferredValidationTime</td>
+<td>number</td>
+<td>no</td>
+<td>Control will start to validate after users stop typing for <code>deferredValidationTime</code> milliseconds. Default value is 200.</td>
+</tr>
+</tbody>
+</table>
+<p>Interface <code>IPropertyFieldGroupOrPerson</code></p>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>string</td>
+<td>no</td>
+<td>The ID of the group</td>
+</tr>
+<tr>
+<td>description</td>
+<td>string</td>
+<td>no</td>
+<td>Group description</td>
+</tr>
+<tr>
+<td>fullName</td>
+<td>string</td>
+<td>yes</td>
+<td>Users' full name or group display name</td>
+</tr>
+<tr>
+<td>login</td>
+<td>string</td>
+<td>yes</td>
+<td>Users' login or group provider name (when security group) or group account name (when SharePoint group).</td>
+</tr>
+<tr>
+<td>email</td>
+<td>string</td>
+<td>no</td>
+<td>Users' email</td>
+</tr>
+<tr>
+<td>jobTitle</td>
+<td>string</td>
+<td>no</td>
+<td>Users' job title</td>
+</tr>
+<tr>
+<td>initials</td>
+<td>string</td>
+<td>no</td>
+<td>Users' initials</td>
+</tr>
+<tr>
+<td>imageUrl</td>
+<td>string</td>
+<td>no</td>
+<td>Users' profile image URL</td>
+</tr>
+</tbody>
+</table>
+<p>Enum <code>PrincipalType</code></p>
+<p>The <code>PrincipalType</code> enum can be used to specify the types of information you want to query: User, Security groups, and/or SharePoint groups.</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Users</td>
+<td>To specify if you want to retrieve users.</td>
+</tr>
+<tr>
+<td>Security</td>
+<td>To specify if you want to retrieve security groups.</td>
+</tr>
+<tr>
+<td>SharePoint</td>
+<td>To specify if you want to retrieve SharePoint groups.</td>
+</tr>
+</tbody>
+</table>
+<p><img alt="" src="https://telemetry.sharepointpnp.com/sp-dev-fx-property-controls/wiki/PropertyFieldPeoplePicker" /></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../PropertyFieldSpinButton/" class="btn btn-neutral float-right" title="PropertyFieldSpinButton">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../PropertyFieldListPicker/" class="btn btn-neutral" title="PropertyFieldListPicker"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/SharePoint/sp-dev-fx-property-controls/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="../PropertyFieldListPicker/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../PropertyFieldSpinButton/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/require.js"></script>
+      <script src="../../search/search.js"></script>
+
+</body>
+</html>
