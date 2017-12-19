@@ -28,7 +28,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-0.17.1, mkdocs-material-2.0.4">
+      <meta name="generator" content="mkdocs-0.17.2, mkdocs-material-2.2.1">
     
     
       
@@ -36,13 +36,13 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/application-709eec9410.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/application.41c6761c.css">
       
-        <link rel="stylesheet" href="../../assets/stylesheets/application-23f75ab9c7.palette.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.792431c1.css">
       
     
     
-      <script src="../../assets/javascripts/modernizr-e826f8942a.js"></script>
+      <script src="../../assets/javascripts/modernizr.1aa3b519.js"></script>
     
     
       
@@ -87,18 +87,18 @@
         <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
       </div>
       <div class="md-flex__cell md-flex__cell--stretch">
-        <span class="md-flex__ellipsis md-header-nav__title">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
           
             
-              
-                <span class="md-header-nav__parent">
-                  Controls
-                </span>
-              
+              <span class="md-header-nav__topic">
+                SharePoint Framework Property Controls
+              </span>
+              <span class="md-header-nav__topic">
+                PropertyFieldTermPicker
+              </span>
             
-            PropertyFieldTermPicker
           
-        </span>
+        </div>
       </div>
       <div class="md-flex__cell md-flex__cell--shrink">
         
@@ -160,6 +160,9 @@
     <div class="md-container">
       
         
+      
+      
+        
 
   
 
@@ -197,7 +200,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../PropertyFieldDropdownWithCallout/" title="Controls with callout" class="md-tabs__link">
+        <a href="../PropertyFieldButtonWithCallout/" title="Controls with callout" class="md-tabs__link">
           Controls with callout
         </a>
       
@@ -453,8 +456,80 @@
 
 
   <li class="md-nav__item">
+    <a href="../PropertyFieldButtonWithCallout/" title="PropertyFieldButtonWithCallout" class="md-nav__link">
+      PropertyFieldButtonWithCallout
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../PropertyFieldCheckboxWithCallout/" title="PropertyFieldCheckboxWithCallout" class="md-nav__link">
+      PropertyFieldCheckboxWithCallout
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../PropertyFieldChoiceGroupWithCallout/" title="PropertyFieldChoiceGroupWithCallout" class="md-nav__link">
+      PropertyFieldChoiceGroupWithCallout
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../PropertyFieldDropdownWithCallout/" title="PropertyFieldDropdownWithCallout" class="md-nav__link">
       PropertyFieldDropdownWithCallout
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../PropertyFieldLabelWithCallout/" title="PropertyFieldLabelWithCallout" class="md-nav__link">
+      PropertyFieldLabelWithCallout
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../PropertyFieldLinkWithCallout/" title="PropertyFieldLinkWithCallout" class="md-nav__link">
+      PropertyFieldLinkWithCallout
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../PropertyFieldSliderWithCallout/" title="PropertyFieldSliderWithCallout" class="md-nav__link">
+      PropertyFieldSliderWithCallout
     </a>
   </li>
 
@@ -600,6 +675,8 @@
 <p><img alt="Selected terms in the panel" src="../../assets/termpicker-selected.png" /></p>
 <p><strong>Empty term picker</strong></p>
 <p><img alt="Selected terms in the input" src="../../assets/termpicker-selected-terms.png" /></p>
+<p><strong>Limit the term set to a specific group or termset</strong></p>
+<p><img alt="Limit to a group or termset" src="../../assets/termpicker-limit-to-group.png" /></p>
 <h2 id="how-to-use-this-control-in-your-solutions">How to use this control in your solutions<a class="headerlink" href="#how-to-use-this-control-in-your-solutions" title="Permanent link">&para;</a></h2>
 <ol>
 <li>Check that you installed the <code>@pnp/spfx-property-controls</code> dependency. Check out The <a href="../../getting-started">getting started</a> page for more information about installing the dependency.</li>
@@ -634,6 +711,8 @@
   <span class="nx">context</span>: <span class="kt">this.context</span><span class="p">,</span>
   <span class="nx">onGetErrorMessage</span>: <span class="kt">null</span><span class="p">,</span>
   <span class="nx">deferredValidationTime</span>: <span class="kt">0</span><span class="p">,</span>
+  <span class="nx">limitByGroupNameOrID</span><span class="o">:</span> <span class="s1">&#39;People&#39;</span><span class="p">,</span>
+  <span class="nx">limitByTermsetNameOrID</span><span class="o">:</span> <span class="s1">&#39;Location&#39;</span><span class="p">,</span>
   <span class="nx">key</span><span class="o">:</span> <span class="s1">&#39;termSetsPickerFieldId&#39;</span>
 <span class="p">})</span>
 </pre></div>
@@ -692,6 +771,18 @@
 <td>boolean</td>
 <td>no</td>
 <td>Indicator to define if the system Groups are exclude. Default is false.</td>
+</tr>
+<tr>
+<td>limitByGroupNameOrID</td>
+<td>string</td>
+<td>no</td>
+<td>Limit the term sets that can be used by the group name or ID.</td>
+</tr>
+<tr>
+<td>limitByTermsetNameOrID</td>
+<td>string</td>
+<td>no</td>
+<td>Limit the terms that can be picked by the Term Set name or ID.</td>
 </tr>
 <tr>
 <td>onPropertyChange</td>
@@ -796,13 +887,13 @@
           </a>
         
         
-          <a href="../PropertyFieldDropdownWithCallout/" title="PropertyFieldDropdownWithCallout" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../PropertyFieldButtonWithCallout/" title="PropertyFieldButtonWithCallout" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                PropertyFieldDropdownWithCallout
+                PropertyFieldButtonWithCallout
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
@@ -818,9 +909,9 @@
       <div class="md-footer-copyright">
         
         powered by
-        <a href="http://www.mkdocs.org" title="MkDocs">MkDocs</a>
+        <a href="http://www.mkdocs.org">MkDocs</a>
         and
-        <a href="http://squidfunk.github.io/mkdocs-material/" title="Material for MkDocs">
+        <a href="https://squidfunk.github.io/mkdocs-material/">
           Material for MkDocs</a>
       </div>
       
@@ -844,9 +935,9 @@
       
     </div>
     
-      <script src="../../assets/javascripts/application-8e4952e681.js"></script>
+      <script src="../../assets/javascripts/application.6cdc17f0.js"></script>
       
-      <script>app.initialize({version:"0.17.1",url:{base:"../.."}})</script>
+      <script>app.initialize({version:"0.17.2",url:{base:"../.."}})</script>
       
     
     
