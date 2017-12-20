@@ -347,13 +347,18 @@
         }, 
         {
             "location": "/about/release-notes/", 
-            "text": "Releases\n\n\n1.1.0\n\n\nImprovements\n\n- Telemetry added\n- Term picker control has now the option to scope on term set or group\n\n\nNew controls\n\n- Added the \nPropertyFieldButtonWithCallout\n control\n- Added the \nPropertyFieldCheckboxWithCallout\n control\n- Added the \nPropertyFieldChoiceGroupWithCallout\n control\n- Added the \nPropertyFieldWithCallout\n control\n- Added the \nPropertyLabelWithCallout\n control\n- Added the \nPropertyLinkWithCallout\n control\n- Added the \nPropertySliderWithCallout\n control\n\n\n1.0.0\n\n\n\n\nAdded the \nPropertyFieldDropdownWithCallout\n control\n\n\nAdded the \nPropertyFieldTextWithCallout\n control\n\n\nAdded the \nPropertyFieldToggleWithCallout\n control\n\n\n\n\nBeta 1.0.0-beta.4\n\n\nNew Controls\n\n- Added the \nPropertyFieldColorPicker\n control\n- Added the \nPropertyFieldSpinButton\n control\n\n\nBeta 1.0.0-beta.3\n\n\nImprovement\n\n- Added \nfirstDayOfWeek\n option to the date picker control\n\n\nBeta 1.0.0-beta.2\n\n\n\n\nInitial release", 
+            "text": "Releases\n\n\n1.1.1\n\n\n\n\nRemoved operation name from telemetry\n\n\n\n\n1.1.0\n\n\nImprovements\n\n- Telemetry added\n- Term picker control has now the option to scope on term set or group\n\n\nNew controls\n\n- Added the \nPropertyFieldButtonWithCallout\n control\n- Added the \nPropertyFieldCheckboxWithCallout\n control\n- Added the \nPropertyFieldChoiceGroupWithCallout\n control\n- Added the \nPropertyFieldWithCallout\n control\n- Added the \nPropertyLabelWithCallout\n control\n- Added the \nPropertyLinkWithCallout\n control\n- Added the \nPropertySliderWithCallout\n control\n\n\n1.0.0\n\n\n\n\nAdded the \nPropertyFieldDropdownWithCallout\n control\n\n\nAdded the \nPropertyFieldTextWithCallout\n control\n\n\nAdded the \nPropertyFieldToggleWithCallout\n control\n\n\n\n\nBeta 1.0.0-beta.4\n\n\nNew Controls\n\n- Added the \nPropertyFieldColorPicker\n control\n- Added the \nPropertyFieldSpinButton\n control\n\n\nBeta 1.0.0-beta.3\n\n\nImprovement\n\n- Added \nfirstDayOfWeek\n option to the date picker control\n\n\nBeta 1.0.0-beta.2\n\n\n\n\nInitial release", 
             "title": "Release notes"
         }, 
         {
             "location": "/about/release-notes/#releases", 
             "text": "", 
             "title": "Releases"
+        }, 
+        {
+            "location": "/about/release-notes/#111", 
+            "text": "Removed operation name from telemetry", 
+            "title": "1.1.1"
         }, 
         {
             "location": "/about/release-notes/#110", 
