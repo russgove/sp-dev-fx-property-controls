@@ -29,6 +29,7 @@ Once the package is installed, you will have to configure the resource file of t
 The following controls are currently available:
 
 - [PropertyFieldColorPicker](./controls/PropertyFieldColorPicker) (Property pane color picker)
+- [PropertyFieldCodeEditor](./controls/PropertyFieldCodeEditor) (Property pane code editor)
 - [PropertyFieldDateTimePicker](./controls/PropertyFieldDateTimePicker) (Property pane date and time selector)
 - [PropertyFieldListPicker](./controls/PropertyFieldListPicker) (Property pane list selector)
 - [PropertyFieldPeoplePicker](./controls/PropertyFieldPeoplePicker) (Property pane people / group selector)
