@@ -6,7 +6,7 @@ export * from './PropertyFieldSpinButton';
 export * from './PropertyFieldTermPicker';
 export * from './PropertyFieldMultiSelect';
 export * from './PropertyFieldNumber';
-
+export * from './PropertyFieldCodeEditor';
 export * from './PropertyFieldButtonWithCallout';
 export * from './PropertyFieldCheckboxWithCallout';
 export * from './PropertyFieldChoiceGroupWithCallout';
